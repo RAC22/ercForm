@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color:whitesmoke;
+}
+.body-container {
+    margin-top: 10vh;
+    max-width: 60%;
+}
+.form-control {
+    border-color: rgb(190, 190, 190);
+}
+.big-money{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(85, 200, 155);
+}
