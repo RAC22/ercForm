@@ -26,6 +26,7 @@ body {
     background-color: lightgray;
 }
 .base-container-medium {
+    min-height: 75vh;
     max-width: 575px;
     width: 100%;
 }
@@ -35,6 +36,9 @@ body {
 .fixed-footer {
     padding: 2rem 0;
     background-color: rgb(235, 235, 235);
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
 }
 #button-bar{
     padding-top: 30px;
@@ -60,4 +64,7 @@ body {
 }
 .check{
     padding-right: 1.25rem;
+}
+.form-check-input{
+    border-color: darkgray;
 }
