@@ -1,17 +1,63 @@
 body {
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background-color:whitesmoke;
 }
-.body-container {
-    margin-top: 10vh;
-    max-width: 60%;
+.logo {
+    width: min-content;
 }
 .form-control {
     border-color: rgb(190, 190, 190);
+}
+.container {
+    justify-content: space-between;
+    width: 100%;
+}
+.navbar{
+    background-color: rgb(235, 235, 235);
 }
 .big-money{
     font-size: 3rem;
     font-weight: 700;
     color: rgb(85, 200, 155);
+}
+.progress{
+    background-color: lightgray;
+}
+.base-container-medium {
+    max-width: 575px;
+    width: 100%;
+}
+.border-top {
+    border-top: 1px solid rgba(20,18,22,.2);
+}
+.fixed-footer {
+    padding: 2rem 0;
+    background-color: rgb(235, 235, 235);
+}
+#button-bar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.list-item-number{
+    background-color: #29abe2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.check{
+    padding-right: 1.25rem;
 }
