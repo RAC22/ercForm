@@ -68,3 +68,8 @@ body {
 .form-check-input{
     border-color: darkgray;
 }
+@media (min-width: 300px){
+    .flex-sm-row {
+        flex-direction: row !important;
+    }
+}
