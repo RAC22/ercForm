@@ -4,7 +4,6 @@ const numInput2021 = document.getElementById('2021count')
 const inputs = document.getElementsByTagName('input')
 const warn1 = document.getElementById('average_fulltime_employees_2020_warning')
 const warn2 = document.getElementById('average_fulltime_employees_2021_warning')
-console.log(inputs)
 
 function w2logic () {
     const w2 = localStorage.getItem('w2_wages_paid')
@@ -96,7 +95,6 @@ if(numInput2020 || numInput2021){
 function persistInput(inputs) {
     for(const idx in inputs){
         const input = inputs[idx]
-        console.log(input)
         const key = input.name;
         const storedValue = localStorage.getItem(key);
 
@@ -110,7 +108,7 @@ function persistInput(inputs) {
             if(input.type != 'checkbox'){
                 localStorage.setItem(key, input.value);
             }else{
-                    localStorage.setItem(key, input.checked)
+                localStorage.setItem(key, input.checked)
             }
         });
     }
