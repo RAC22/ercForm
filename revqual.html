@@ -21,38 +21,41 @@
                 <div class="base-container-medium">
                     <div class="d-flex flex-column align-items-center">
                         <div class="text-start base-container-small">
-                            <div class="progress" role="progressbar" aria-label="progress-bar-animated" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                            <div class="progress" role="progressbar" aria-label="progress-bar-animated" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
                             </div>
                             <br/>
                             <form class="row g-3">
-                                <h4>Are you a federal, state, or local entity?</h4>
-                                <p>The federal government, the governments of any state or political subdivision thereof, and any agency or instrumentality of those governments are <strong>not</strong> Eligible Employers and are not entitled to receive the Employee Retention Credit. However, tribal governments and tribal entities may be Eligible Employers.</p>
-                                <div id="div_id_government_entity" class=" mb-3">
+                                <h3>Revenue reduction</h3>
+                                <p>The most straightforward way to qualify for the Employee Retention Credit is from a qualified revenue reduction during the qualification period of the program.</p>
+                                <h5>Revenue reduction qualifications</h5>
+                                <p>2021 - 20% reduction of gross sales for the 2021 quarter as compared to the same quarter in 2019 (or 2020 if you were not in business during the quarter in 2019). The alternative lookback option allows the business to use the previous quarter compared to the same 2019 quarter to qualify.</p>
+                                <h4>Did you experience any revenue reductions in 2021?</h4>
+                                <div id="div_id_had_revenue_reduction" class=" mb-3">
                                     <div>
                                         <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="government_entity" value="true" id="id_government_entity_0">
-                                                <label for="id_government_entity_0" class="form-check-label">
-                                                    Yes
-                                                </label>
+                                            <input type="radio" class="form-check-input" name="had_revenue_reduction" value="true" id="id_had_revenue_reduction_0">
+                                            <label for="id_had_revenue_reduction_0" class="form-check-label">
+                                                Yes
+                                            </label>
                                         </div>
                                         <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="government_entity" value="false" id="id_government_entity_1">
-                                                <label for="id_government_entity_1" class="form-check-label">
-                                                    No
-                                                </label>
+                                            <input type="radio" class="form-check-input" name="had_revenue_reduction" value="false" id="id_had_revenue_reduction_1">
+                                            <label for="id_had_revenue_reduction_1" class="form-check-label">
+                                                No
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="button-bar" class="d-flex border-top button-bar justify-content-between align-items-center flex-column flex-sm-row">
-                                    <a type="button" class="btn btn-light" name="back" value="back" id="back-button" href="./form3.html">
+                                    <a type="button" class="btn btn-light" name="back" value="back" id="back-button" href="./qualop.html">
                                         <div class="d-flex align-items-center justify-content-center">
                                             <img src="./images/chevron-left.svg" class="img-fluid" alt="Back arrow">
                                             Back
                                         </div>
                                     </a>
                                 <div class="d-flex flex-column flex-sm-row justify-content-end button-bar-right">
-                                    <a type="button" class="btn next-button btn-primary btn-submit ms-0 ms-sm-3" name="next" value="next" id="next-button" onclick="govLogic()">
+                                    <a type="button" class="btn next-button btn-primary btn-submit ms-0 ms-sm-3" name="next" value="next" id="next-button" onclick="revReducLogic()">
                                         Continue
                                     </a>
                                 </div>
