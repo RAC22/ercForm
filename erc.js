@@ -49,25 +49,20 @@ function revLogic () {
     //TODO finish startupqual qualification
 }
 function revReducLogic () {
-    const revReduced = localStorage.getItem('had_revenue_reduction')
-    if(revReduced == 'false'){
-        document.location.href='./supply.html'
-    }
-    //TODO if true  -> qualify
+    document.location.href='./supply.html'
 }
 function supplyChainLogic () {
-    const supplyDis = localStorage.getItem('supply_chain_disruption')
-    if(supplyDis == 'false'){
         document.location.href='./lockdown.html'
-    }
-    //TODO if true -> qualify
 }
 function lockdownLogic () {
     const lockedDown = localStorage.getItem('suspension')
-    if(lockedDown == 'false'){
+    const revReduc = localStorage.getItem('had_revenue_reduction')
+    const sussy = localStorage.getItem('suspension')
+    if(lockedDown == 'true' || revReduc == 'true' || sussy == 'true'){
+        document.location.href='./qualified.html'
+    }else{
         document.location.href='./sorry.html'
     }
-    //TODO if true -> qualify
 }
 function changeBigMoney () {
     const num2020 = numInput2020.value
