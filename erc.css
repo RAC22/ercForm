@@ -2,7 +2,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color:whitesmoke;
+    background-color:hsl(160, 0, 239);
 }
 .logo {
     width: min-content;
