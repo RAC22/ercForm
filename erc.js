@@ -89,7 +89,7 @@ function changeBigMoney () {
 if(numInput2020 || numInput2021){
     window.onkeyup = changeBigMoney
     window.onmouseup = changeBigMoney
-    window.onmousemove = changeBigMoney
+    window.onload = changeBigMoney
 }
 
 function persistInput(inputs) {
