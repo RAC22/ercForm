@@ -25,7 +25,7 @@
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
                             </div>
                             <br/>
-                            <form class="row g-3" onsubmit="window.open('./form2.html')">
+                            <form class="row g-3" target='_self' action='./form2.html' method="get">
                                 <div class="col-12">
                                     <label for="company" class="form-label">Company name</label>
                                     <input type="text" class="form-control" id="company" name="Company" required>
@@ -87,7 +87,7 @@
                                     </label>
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button type="submit" class="btn btn-primary" id="next1" href="./form2.html">Let's get started</button>
+                                    <button type="submit" class="btn btn-primary" id="next1" target='_self'>Let's get started</button>
                                 </div>
                             </form>
                         </div>

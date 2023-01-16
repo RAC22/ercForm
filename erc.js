@@ -116,3 +116,4 @@ function persistInput(inputs) {
 if(inputs.length) {
     persistInput(inputs)
 }
+
