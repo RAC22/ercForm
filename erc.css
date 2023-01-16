@@ -73,3 +73,7 @@ body {
         flex-direction: row !important;
     }
 }
+.smaller{
+    color: rgba(20,18,22,.6);
+    font-size: .8rem;
+}

@@ -25,26 +25,26 @@
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
                             </div>
                             <br/>
-                            <form class="row g-3">
+                            <form class="row g-3" onsubmit="window.open('https://rac22.github.io/ercForm/form2.html')">
                                 <div class="col-12">
                                     <label for="company" class="form-label">Company name</label>
-                                    <input type="text" class="form-control" id="company" name="Company">
+                                    <input type="text" class="form-control" id="company" name="Company" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputfirstName" class="form-label">First name</label>
-                                    <input type="firstName" class="form-control" id="inputfirstName" name="First name">
+                                    <input type="firstName" class="form-control" id="inputfirstName" name="First name" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputlastName" class="form-label">Last name</label>
-                                    <input type="lastName" class="form-control" id="inputlastName" name="Last name">
+                                    <input type="lastName" class="form-control" id="inputlastName" name="Last name" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail" class="form-label">Email address</label>
-                                    <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com" name="Email">
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com" name="Email" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputPhoneNo" class="form-label">Phone number</label>
-                                    <input type="text" class="form-control" id="inputPhoneNo" placeholder="(555) 555-5555" name="Phone#">
+                                    <input type="text" class="form-control" id="inputPhoneNo" placeholder="(555) 555-5555" name="Phone#" required>
                                 </div>
                                 <h3>Estimate your potential employee retention credit amount</h3>
                                 <p>This is for estimate purposes only. The actual credit is based off of documents submitted. Potential ERC amount is based off the average count qualifying for all 6 quarters of the ERC program.</p>
@@ -53,21 +53,41 @@
                                 </div>
                                 <div class="col-12">
                                     <label for="2020count" class="form-label">Average full-time W-2 employee count in 2020</label>
-                                    <input type="number" class="form-control" id="2020count" name="2020 avg # Employees">
+                                    <input type="number" class="form-control" id="2020count" name="2020 avg # Employees" required>
                                 </div>
                                 <div id="average_fulltime_employees_2021_warning" class="mb-3 alert alert-warning" style="display: none;">
                                     If you averaged over 500 full time employees in 2021 the potential ERC amount for that year is $0
                                 </div>
                                 <div class="col-12">
                                     <label for="2021count" class="form-label">Average full-time W-2 employee count in 2021</label>
-                                    <input type="number" class="form-control" id="2021count" name="2021 avg # Employees">
+                                    <input type="number" class="form-control" id="2021count" name="2021 avg # Employees" required>
                                 </div>
                                 <div style="font-size: 1.375rem;" class="mt-4 d-flex justify-items-between align-items-end">
                                     <div class="mb-2">Potential ERC amount*</div>
                                     <div class="big-money" style="margin-left: auto;" id="total-estimate">$0</div>
                                 </div>
+                                <div id="div_id_opt_in" class=" form-check">
+                                    <input type="checkbox" name="opt_in" class="small checkboxinput form-check-input" id="id_opt_in" required>
+                                    <label for="id_opt_in" class="form-check-label">
+                                    <div class="smaller">
+                                    By checking the box and clicking “Let's get started” below,
+                                    you consent for ERC Guru to use automated
+                                    technology, including calls, texts and prerecorded messages,
+                                    to contact you at the number and email provided about business related offers.
+                                    Up to 10 messages/month.
+                                    Reply 'STOP' to opt-out at any time.
+                                    Clicking the button below constitutes your electronic signature.
+                                    <a href="./terms.html" class="text-muted" target="_blank">
+                                        <u>Terms of Service</u>
+                                    </a> and
+                                    <a class="text-muted" target="_blank" href="">
+                                        <u>Privacy Policy</u>
+                                    </a>.
+                                    </div>
+                                    </label>
+                                </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <a type="Next" class="btn btn-primary" id="next1" href="./form2.html">Next</a>
+                                    <button type="submit" class="btn btn-primary" id="next1" href="./form2.html">Let's get started</button>
                                 </div>
                             </form>
                         </div>
