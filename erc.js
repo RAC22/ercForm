@@ -26,7 +26,7 @@ function bizStartLogic () {
     if(startedBefore == 'true'){
         document.location.href='./empnum.html'
     }else{
-        document.location.href='./empnum.html'
+        document.location.href='./state.html'
     }
 }
 function fteNumLogic () {
