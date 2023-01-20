@@ -26,7 +26,7 @@ function bizStartLogic () {
     if(startedBefore == 'true'){
         document.location.href='./empnum.html'
     }else{
-        document.location.href='./grossrev.html'
+        document.location.href='./empnum.html'
     }
 }
 function fteNumLogic () {
@@ -34,7 +34,7 @@ function fteNumLogic () {
     if(fteNum == 'OVER_500'){
         document.location.href='./sorry.html'
     }else{
-        document.location.href='./qualop.html'
+        document.location.href='./state.html'
     }
 }
 function revLogic () {
