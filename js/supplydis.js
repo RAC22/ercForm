@@ -31,4 +31,4 @@ radioNo.addEventListener('input', function () {
     uncheckBoxes()
 });
 hideUnhide()
-window.onmousemove = hideUnhide
+window.onload = hideUnhide
