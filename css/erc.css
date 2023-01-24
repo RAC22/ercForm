@@ -84,3 +84,13 @@ body {
     padding-top: 5px;
     opacity: .9;
 }
+.accordion-item{
+    border-color: rgb(200, 200, 200);
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+}
+.nav-item{
+    padding: 10px;
+}
