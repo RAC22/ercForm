@@ -16,7 +16,7 @@ function calcEst (elem) {
     }else{
         estimate = perQuarter * quarters
     }
-    elem.innerHTML = `$${estimate}`
+    elem.innerHTML = `$${estimate.toLocaleString()}`
     localStorage.setItem('Estimate', `$${estimate}`)
 }
 if(est){

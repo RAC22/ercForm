@@ -83,7 +83,7 @@ function changeBigMoney () {
     if(num2021 && num2021 >= 0 && num2021 <= 500){
         newBigMoneyVal += 21000 * num2021
     }
-    bigMoney.innerHTML = `$${newBigMoneyVal}`
+    bigMoney.innerHTML = `$${newBigMoneyVal.toLocaleString()}`
 
 }
 if(numInput2020 || numInput2021){
