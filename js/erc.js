@@ -78,10 +78,10 @@ function changeBigMoney () {
         warn2.style = 'display: none;'
     }
     if(num2020 && num2020 >= 0 && num2020 <= 100){
-        newBigMoneyVal += 4000 * num2020
+        newBigMoneyVal += 5000 * num2020
     }
     if(num2021 && num2021 >= 0 && num2021 <= 500){
-        newBigMoneyVal += 11550 * num2021
+        newBigMoneyVal += 21000 * num2021
     }
     bigMoney.innerHTML = `$${newBigMoneyVal}`
 

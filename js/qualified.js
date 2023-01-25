@@ -2,15 +2,20 @@ const est = document.getElementById('ercEst')
 
 function calcEst (elem) {
     const stored = {...localStorage}
+    let estimate = 0
     let perQuarter = 0
     if(stored['2021 avg # Employees']){
-        perQuarter = stored['2021 avg # Employees'] * 3850
+        perQuarter = stored['2021 avg # Employees'] * 7000
     }
     let quarters = 0
     if(stored['revenue_qualifier_q1'] == 'true' || stored['supply_chain_disruption_Q1_2021'] == 'true' || stored['suspension_Q1_2021'] == 'true'){quarters++}
     if(stored['revenue_qualifier_q2'] == 'true' || stored['supply_chain_disruption_Q2_2021'] == 'true' || stored['suspension_Q2_2021'] == 'true'){quarters++}
     if(stored['revenue_qualifier_q3'] == 'true' || stored['supply_chain_disruption_Q3_2021'] == 'true' || stored['suspension_Q3_2021'] == 'true'){quarters++}
-    const estimate = perQuarter * quarters
+    if(stored['2020 avg # Employees']){
+        estimate = (perQuarter * quarters) + (stored['2020 avg # Employees'] * 5000)
+    }else{
+        estimate = perQuarter * quarters
+    }
     elem.innerHTML = `$${estimate}`
     localStorage.setItem('Estimate', `$${estimate}`)
 }
