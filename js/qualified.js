@@ -105,3 +105,12 @@ function exportData() {
 	container.appendChild(newElem);
 }
 exportData();
+
+function loading() {
+	const sub = document.getElementById("submitbtn");
+	const form = document.getElementById("mainForm");
+	const spinner = document.getElementById("spinner");
+	sub.setAttribute("disabled", true);
+	spinner.classList.remove("visually-hidden");
+	form.submit();
+}
