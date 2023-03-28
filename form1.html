@@ -12,7 +12,7 @@
 			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./css/erc.css" />
+		<link rel="stylesheet" href="../css/erc.css" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
@@ -66,7 +66,7 @@
 		<nav class="navbar">
 			<div class="container">
 				<a class="nav-link logo" aria-current="page" href="./index.html"
-					><img src="./images/ercgurulogo.png" class="logo"
+					><img src="../images/ercgurulogo.png" class="logo"
 				/></a>
 				<ul class="navbar-nav nav-links">
 					<li class="nav-item">
@@ -158,8 +158,9 @@
 										type="text"
 										class="form-control"
 										id="inputPhoneNo"
-										placeholder="(555) 555-5555"
+										placeholder="555-555-5555"
 										name="Phone#"
+										pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 										required
 									/>
 								</div>
@@ -274,7 +275,7 @@
 		</div>
 		<div class="fixed-footer border-top">
 			<div class="d-flex text-black-50 justify-content-center">
-				<img src="./images/ercgurulogo.png" class="logo" />
+				<img src="../images/ercgurulogo.png" class="logo" />
 				<div style="line-height: 1.2rem">
 					<div>Copyright © 2023</div>
 					<div>All rights reserved</div>
@@ -291,6 +292,6 @@
 			async
 			defer
 		></script>
-		<script src="./js/erc.js" async defer></script>
+		<script src="../js/erc.js" async defer></script>
 	</body>
 </html>
