@@ -108,9 +108,11 @@ exportData();
 
 function loading() {
 	const sub = document.getElementById("submitbtn");
-	const form = document.getElementById("mainForm");
+	//const form = document.getElementById("mainForm");
 	const spinner = document.getElementById("spinner");
 	sub.setAttribute("disabled", true);
 	spinner.classList.remove("visually-hidden");
-	form.submit();
+	//form.submit();
+	window.location.href = `./thankyou.html`;
+	//6a0b6bc7da469341ee5a69c12e0193d0
 }
