@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ERC Guru</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/erc.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<link rel="shortcut icon" href="/favicon/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+		<meta name="theme-color" content="#ffffff" />
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-WDG6WSS");
+		</script>
+	</head>
+	<body>
+		<noscript>
+			<iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-WDG6WSS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			>
+			</iframe>
+		</noscript>
+		<nav class="navbar">
+			<div class="container">
+				<a class="nav-link logo" aria-current="page" href="./index.html"
+					><img src="../images/ercgurulogo.png" class="logo"
+				/></a>
+				<ul class="navbar-nav nav-links">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./faq.html">FAQ</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="flex-grow-1">
+			<div class="d-flex justify-content-center container my-5 py-3">
+				<div class="base-container-medium">
+					<div class="d-flex flex-column align-items-center">
+						<div class="text-start base-container-small">
+							<div
+								class="progress"
+								role="progressbar"
+								aria-label="progress-bar-animated"
+								aria-valuenow="40"
+								aria-valuemin="0"
+								aria-valuemax="100"
+							>
+								<div
+									class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 40%"
+								></div>
+							</div>
+							<br />
+							<form class="row g-3">
+								<h4>When did you start your business?</h4>
+								<p>
+									A recovery startup business is an employer that began carrying
+									on a trade or business on or after February 15, 2020.
+									Therefore, the determination of when an employer "began
+									carrying on a trade or business" is made in the same manner as
+									found in the purposes of
+									<a
+										href="https://www.irs.gov/pub/irs-drop/rr-99-7.pdf"
+										target="_blank"
+										>section 162</a
+									>. In general, for purposes of section 162, a taxpayer has not
+									begun carrying on a trade or business "until such time as the
+									business has begun to function as a going concern and
+									performed those activities for which it was organized".
+								</p>
+								<div id="div_id_started_before_feb_2020" class="mb-3">
+									<div>
+										<div class="form-check">
+											<input
+												type="radio"
+												class="form-check-input"
+												name="started_before_feb_2020"
+												value="true"
+												id="id_started_before_feb_2020_0"
+											/>
+											<label
+												for="id_started_before_feb_2020_0"
+												class="form-check-label"
+											>
+												Before February 15, 2020
+											</label>
+										</div>
+										<div class="form-check">
+											<input
+												type="radio"
+												class="form-check-input"
+												name="started_before_feb_2020"
+												value="false"
+												id="id_started_before_feb_2020_1"
+											/>
+											<label
+												for="id_started_before_feb_2020_1"
+												class="form-check-label"
+											>
+												On or after February 15, 2020
+											</label>
+										</div>
+									</div>
+								</div>
+								<div
+									id="button-bar"
+									class="d-flex border-top button-bar justify-content-between align-items-center flex-column flex-sm-row"
+								>
+									<a
+										type="button"
+										class="btn btn-light"
+										name="back"
+										value="back"
+										id="back-button"
+										href="./form4.html"
+									>
+										<div
+											class="d-flex align-items-center justify-content-center"
+										>
+											<img
+												src="../images/chevron-left.svg"
+												class="img-fluid"
+												alt="Back arrow"
+											/>
+											Back
+										</div>
+									</a>
+									<div
+										class="d-flex flex-column flex-sm-row justify-content-end button-bar-right"
+									>
+										<a
+											type="button"
+											class="btn next-button btn-primary btn-submit ms-0 ms-sm-3"
+											name="next"
+											value="next"
+											id="next-button"
+											onclick="bizStartLogic()"
+										>
+											Continue
+										</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fixed-footer border-top">
+			<div class="d-flex text-black-50 justify-content-center">
+				<img src="../images/ercgurulogo.png" class="logo" />
+				<div style="line-height: 1.2rem">
+					<div>Copyright © 2023</div>
+					<div>All rights reserved</div>
+					<a class="d-block" target="_blank" href="./privacypolicy.html"
+						>Privacy Policy</a
+					>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+			async
+			defer
+		></script>
+		<script src="../js/erc.js" async defer></script>
+	</body>
+</html>
