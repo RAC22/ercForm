@@ -316,17 +316,54 @@
 									<div
 										class="d-flex flex-column flex-sm-row justify-content-end button-bar-right"
 									>
+										<div
+											class="d-flex justify-content-center visually-hidden"
+											id="spinner"
+										>
+											<div class="spinner-border" role="status">
+												<span class="visually-hidden">Loading...</span>
+											</div>
+										</div>
 										<a
 											type="button"
 											class="btn next-button btn-primary btn-submit ms-0 ms-sm-3"
 											name="next"
 											value="next"
-											id="next-button"
+											id="submitbtn"
 											onclick="lockdownLogic()"
 										>
 											Continue
 										</a>
 									</div>
+								</div>
+							</form>
+							<form
+								class="row g-3"
+								id="mainForm"
+								action="https://formsubmit.co/9177b109dd1b5712ccb78b049292f407"
+								method="POST"
+								enctype="multipart/form-data"
+							>
+								<div id="pepared-forms" style="display: none">
+									<div
+										class="big-money text-end"
+										style="line-height: 1"
+										id="ercEst"
+									>
+										$0
+									</div>
+									<input
+										type="hidden"
+										name="_next"
+										value="https://www.ercguru.com/&/qualified.html"
+									/>
+									<input
+										type="hidden"
+										name="_subject"
+										value="ERC consultation"
+									/>
+									<input type="hidden" name="_template" value="table" />
+									<input type="hidden" name="_captcha" value="false" />
 								</div>
 							</form>
 						</div>
