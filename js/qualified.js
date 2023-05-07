@@ -107,12 +107,20 @@ function exportData() {
 exportData();
 
 function loading() {
+	const stored = { ...localStorage };
+	const numEmployees =
+		parseInt(stored["2021 avg # Employees"]) +
+		parseInt(stored["2020 avg # Employees"]);
 	const sub = document.getElementById("submitbtn");
 	//const form = document.getElementById("mainForm");
 	const spinner = document.getElementById("spinner");
 	sub.setAttribute("disabled", true);
 	spinner.classList.remove("visually-hidden");
 	//form.submit();
-	window.location.href = `./thankyou.html`;
+	if (numEmployees >= 5) {
+		window.location.href = `./thankyou.html`;
+	} else {
+		window.location.href = `./thanks.html`;
+	}
 	//6a0b6bc7da469341ee5a69c12e0193d0
 }
