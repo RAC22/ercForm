@@ -259,3 +259,27 @@ function buildAndSubmit() {
 	//window.location.href = `./thankyou.html`;
 	//6a0b6bc7da469341ee5a69c12e0193d0
 }
+
+const sections = document.querySelectorAll(".sect");
+console.log(sections);
+const observerOptions = {
+	root: null,
+	rootMargin: "0px",
+	threshold: 0.15,
+};
+const intersectionCallback = (entries, observer) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("fadeIn");
+			entry.target.classList.remove("sect");
+			observer.unobserve(entry.target);
+		}
+	});
+};
+const observer = new IntersectionObserver(
+	intersectionCallback,
+	observerOptions
+);
+sections.forEach((element) => {
+	observer.observe(element);
+});
