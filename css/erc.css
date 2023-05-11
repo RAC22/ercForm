@@ -141,7 +141,7 @@ body {
 }
 
 .sect {
-	opacity: 0;
+	opacity: 0.1;
 	transform: translateY(100px);
 }
 .fadeIn {
