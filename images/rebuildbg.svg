@@ -1,12 +1,20 @@
-<svg width="1920" height="2600" viewBox="0 0 1920 2600" fill="none"
-    xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0H1920V2600L0 2500V0Z" fill="url(#paint0_linear_581_1220)"/>
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <defs>
-        <linearGradient id="paint0_linear_581_1220" x1="-37.3333" y1="2600" x2="1669.96" y2="2199.25" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#367f63"/>
-            <stop offset="1" stop-color="#007bff"/>
-        </linearGradient>
+        <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
     </defs>
-    <!-- 367f63 green
-007bff blue -->
+    <rect width="900" height="600" fill="#007bff"></rect>
+    <g filter="url(#blur1)">
+        <circle cx="689" cy="546" fill="#367f63" r="357"></circle>
+        <circle cx="898" cy="497" fill="#007bff" r="357"></circle>
+        <circle cx="67" cy="555" fill="#367f63" r="357"></circle>
+        <circle cx="325" cy="395" fill="#367f63" r="357"></circle>
+        <circle cx="518" cy="422" fill="#007bff" r="357"></circle>
+        <circle cx="6" cy="144" fill="#367f63" r="357"></circle>
+    </g>
 </svg>
