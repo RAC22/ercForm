@@ -117,7 +117,7 @@ function loading() {
 	sub.setAttribute("disabled", true);
 	spinner.classList.remove("visually-hidden");
 	//form.submit();
-	if (numEmployees >= 5 && numEmployees < 25) {
+	if (numEmployees >= 3 && numEmployees < 25) {
 		window.location.href = `./thankyou.html`;
 	} else if (numEmployees >= 25) {
 		window.location.href = `./thankyouverymuch.html`;
