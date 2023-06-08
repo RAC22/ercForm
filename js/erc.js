@@ -57,10 +57,16 @@ function supplyChainLogic() {
 	document.location.href = "./lockdown.html";
 }
 function lockdownLogic() {
+	const numEmp =
+		parseInt(localStorage.getItem("2021 avg # Employees")) +
+		parseInt(localStorage.getItem("2020 avg # Employees"));
 	const lockedDown = localStorage.getItem("suspension");
 	const revReduc = localStorage.getItem("had_revenue_reduction");
 	const sussy = localStorage.getItem("suspension");
-	if (lockedDown == "true" || revReduc == "true" || sussy == "true") {
+	if (
+		(lockedDown == "true" || revReduc == "true" || sussy == "true") &&
+		numEmp > 2
+	) {
 		//document.location.href = "./qualified.html";
 		buildAndSubmit();
 	} else {
